@@ -1,0 +1,67 @@
+YUVRAJ MEHANDI ARTIST — WEBSITE IMAGE GUIDE
+=============================================
+This is the ONLY image folder in the whole website ("assets").
+Everything the site needs — every photo used on the page — lives in
+this one folder. Do not create any other image folders; if you ever
+need to add or swap a photo, just drop it in here and point to it
+from index.html the same way the existing images are referenced.
+
+WHERE EACH FILE IS USED ON THE PAGE
+------------------------------------
+hero-01.jpg             -> Split-screen banner photo at the very top of
+                            the site (the "Hero" section) — the symmetrical
+                            two-hand bridal design.
+about-01.jpg             -> Photo in the "About / The Artist" section —
+                            the client in the maroon outfit with the
+                            floral backdrop.
+
+gallery-01.jpg  ...14    -> The 14 full-size photos that open in the
+                            pop-up (lightbox) when a visitor clicks a
+                            photo in the Gallery section.
+gallery-01-thumb.jpg ...14-thumb.jpg
+                        -> Smaller, faster-loading versions of the same
+                           14 photos, used for the grid thumbnails in
+                           the Gallery section and the small Instagram
+                           strip near the bottom. These load first so
+                           the page feels fast, especially on mobile
+                           data — the full photo only loads when someone
+                           taps to zoom in.
+
+ORIGINAL FILE NAME  ->  RENAMED TO  (as used on the website — v2 redesign)
+----------------------------------------------------------------------------
+mehndi 9.jpeg         -> hero-01.jpg            (Hero — symmetrical two-hand bridal design, peach fabric)
+mehndi 8.jpeg         -> about-01.jpg           (About section — maroon outfit, floral backdrop)
+mehndi 1 .jpeg        -> gallery-01.jpg / gallery-01-thumb.jpg
+mehndi 3.jpeg         -> gallery-02.jpg / gallery-02-thumb.jpg   (garden portrait — was the old hero photo)
+mehndi 4.jpeg         -> gallery-03.jpg / gallery-03-thumb.jpg
+mehndi 13.jpeg        -> gallery-04.jpg / gallery-04-thumb.jpg   (smiling close-up — was the old about photo)
+mehndi 5.jpeg         -> gallery-05.jpg / gallery-05-thumb.jpg
+mehndi 2 .jpeg        -> gallery-06.jpg / gallery-06-thumb.jpg
+mehndi 6.jpeg         -> gallery-07.jpg / gallery-07-thumb.jpg
+mehndi 12.jpeg        -> gallery-08.jpg / gallery-08-thumb.jpg
+mehndi 7.jpeg         -> gallery-09.jpg / gallery-09-thumb.jpg
+mehndi 10.jpeg        -> gallery-10.jpg / gallery-10-thumb.jpg
+mehndi 14.jpeg        -> gallery-11.jpg / gallery-11-thumb.jpg
+mehndi 11.jpeg        -> gallery-12.jpg / gallery-12-thumb.jpg
+mehndi 15.jpeg        -> gallery-13.jpg / gallery-13-thumb.jpg
+mehndi 16.jpeg        -> gallery-14.jpg / gallery-14-thumb.jpg
+
+(Note: your original zip file also had "mehndi 12 - Copy.jpeg" — this
+was an exact duplicate of "mehndi 12.jpeg", so it was skipped to avoid
+showing the same photo twice. All 16 unique photos from your zip are
+used somewhere on the site — nothing was left out. This version swaps
+which two photos are used for the Hero and About sections compared to
+the first draft, and moves the two originally-used ones into the
+gallery grid instead, so every photo is still used exactly once.)
+
+HOW TO ADD / REPLACE A PHOTO LATER
+------------------------------------
+1. Save your new photo into this "assets" folder.
+2. Give it a clear name, e.g. gallery-15.jpg (and, ideally, a smaller
+   compressed copy named gallery-15-thumb.jpg for faster loading —
+   about 600px on the longest side is plenty for the thumbnail).
+3. Open index.html in a text editor, find the "GALLERY" section, and
+   copy one of the existing <div class="gallery-item"> blocks, then
+   change the file names inside it to your new file names.
+
+That's it — one folder, clearly named files, easy to manage.
